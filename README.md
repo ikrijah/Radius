@@ -2,7 +2,6 @@
 ## I. Freeradius
 ### a. Installation de Freeradius
 ### b. Configuration de ldap dans Freeradius
-## II. LDAP
 
 
 ## I. Freeradius
