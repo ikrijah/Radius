@@ -30,11 +30,11 @@ vim default
 vim inner-tunnel
 ```
 
-![alt text](Screenshot1.JPG)
+![alt text](images/Screenshot1.JPG)
 
 Dans ces mêmes fichiers, il faut vérifier que le module ldap soit bien **décommenté**.
 
-![alt text](Screenshot2.JPG)
+![alt text](images/Screenshot2.JPG)
 
 
 
@@ -68,5 +68,5 @@ cd mods-available/
 vim ldap
 ```
 
-![alt text](Screenshot3.JPG)
+![alt text](images/Screenshot3.JPG)
 
