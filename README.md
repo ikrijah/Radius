@@ -16,9 +16,9 @@ apt-get install freeradius freeradius-utils
 
 Il vous faut d'abord quelques prérequis. 
 
-L'adresse IP du LDAP : 10.10.5.1 
-Le port par défaut : 389 
-Domaine Name : cn=admin,dc=cyber,dc=isen,dc=fr
+L'adresse IP du LDAP : 10.10.5.1   
+Le port par défaut : 389   
+Domaine Name : cn=admin,dc=cyber,dc=isen,dc=fr   
 Il faut aussi le mot de passe du LDAP. Celui-ci devrait vous être fournit par un administrateur.
 
 
