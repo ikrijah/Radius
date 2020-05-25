@@ -48,7 +48,7 @@ vim dictionary
 A la fin du fichier, ajoutez la ligne suivante :
 
 ```
-VALUE Auth-Type LDAP 5                                                                                                    
+VALUE Auth-Type LDAP 5
 ```
 
 
