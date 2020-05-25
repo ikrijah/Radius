@@ -70,3 +70,48 @@ vim ldap
 
 ![alt text](images/Screenshot3.JPG)
 
+
+Allons maintenant dans le fichier clients.conf
+
+```
+cd ..
+vim clients.conf
+```
+
+Ajoutez un client avec les lignes suivantes :
+
+```
+client private-network-3 {
+        ipaddr = 10.10.5.0/24
+        secret = secret77
+} 
+```
+
+
+Pour tester toutes ces configurations : 
+
+```
+systemctl restart freeradius
+systemctl status freeradius
+```
+
+Pour passer freeradius en mode debug, ouvrez un nouveau terminal. Il faut que freeradius soit inactif avant de démarrer le debug. 
+
+```
+systemctl stop freeradius
+freeradius -X
+```
+
+Vous devriez pouvoir voir en dernière ligne "Ready to process requests". Le freeradius en mode debug attend les demandes d'authentification. Si vous avez des erreurs et que vous voulez voir quel est le problème, il faut rediriger la sortie vers un fichier texte. Pour cela, on peut remplacer freeradius -X par ceci :
+
+```
+freeradius -X 2>&1 | tee debugfile
+```
+
+Dans le premier terminal, vous pouvez envoyer une ligne de commande pour tester l'authentification sur le serveur LDAP : 
+
+```
+radtest <user> <password> localhost 0 secret77
+```
+
+Vous devriez maintenant voir "Access-Accept" pour la dernière ligne de sortie.
