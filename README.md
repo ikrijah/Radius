@@ -1,24 +1,18 @@
 # Configuration de Freeradius avec LDAP
-
 ## I. Freeradius
-
 ### a. Installation de Freeradius
 ### b. Configuration de ldap dans Freeradius
-#### i. Prérequis
-#### ii. Configuration
-
 ## II. LDAP
 
 
 ## I. Freeradius
 
 ### a. Installation de Freeradius 
-
-``` apt-get install freeradius freeradius-utils
+``` 
+apt-get install freeradius freeradius-utils
 ```
-### b. Configuration de ldap dans Freeradius
 
-#### i. Prérequis
+### b. Configuration de ldap dans Freeradius
 
 Il vous faut d'abord quelques prérequis. 
 
@@ -27,7 +21,6 @@ Le port par défaut : 389
 Domaine Name : cn=admin,dc=cyber,dc=isen,dc=fr
 Il faut aussi le mot de passe du LDAP. Celui-ci devrait vous être fournit par un administrateur.
 
-#### ii. Configuration
 
 Après avoir installé Freeradius, nous pouvons commencer.
 
