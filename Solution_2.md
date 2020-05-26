@@ -8,7 +8,9 @@
 
 ## III. Configuration
 
-## IV. Test / Troubleshooting 
+## IV. Test 
+
+## V. Troubleshooting 
 
 
 ## I. Introduction
@@ -55,8 +57,9 @@ Si vous avez modifié un fichier de configuration, il ne faut pas oublier de res
 
 #### Configuration de Winbind
 
+## IV. Test
 
-## IV. Test / Troubleshooting 
+## V. Troubleshooting 
 
 Nous avons rencontré énormément d'erreurs. Nous vous guiderons pour trouver l'origine de ces erreurs ! Pour cela, nous vous ferons une liste exhaustive de ces erreurs ainsi que les pistes pour les supprimer. 
 
