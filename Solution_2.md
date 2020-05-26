@@ -24,7 +24,6 @@ Afin de s'authentifier à l'aide des identifiants fournis lors de la connexion s
 **Winbind** : Module qui récupère les comptes utilisateurs et les groupes présents dans l'Active Directory.    
 **NTP** : Serveur de temps qui permet au serveur proxy de synchroniser son horloge sur celui de l'Active Directory.
 
-Lorsque nous avons travaillé, nous avons rencontré énormément d'erreurs. Malheureusement, je ne me souviens pas de toutes les erreurs.
 
 ### b. Prérequis
 
@@ -44,11 +43,30 @@ Lors de l'installation, krb5 devrait vous demander certaines choses. Pour le REA
 
 Pas de problèmes jusque là !
 
+## Configuration
+
 #### Configuration de Samba
 
 #### Configuration de Kerberos
 
-#### Configuration de ntp
+#### Configuration de NTP
 
-#### Configuration de winbind
+#### Configuration de Winbind
 
+
+## IV. Test / Troubleshooting 
+
+Nous avons rencontré énormément d'erreurs. Pour cela, nous vous ferons une liste exhaustive de ces erreurs ainsi que les pistes pour les supprimer. C'est pour cela que nous vous guiderons pour trouver l'origine de ces erreurs. 
+
+Le moyen qui a été le plus efficace pour nous pour retracer ces erreurs était 'systemctl status'. Ceci nous permet de voir si un module est actif ou non et les erreurs qui sont en rouge expliquent parfois clairement où est le problème. Si vous avez modifié un fichier de configuration, il ne faut pas oublier de restart le service pour prendre en compte les modifications avec 'systemctl restart <nom_service>'. Exemples !
+
+```
+systemctl restart smbd 
+systemctl status smbd 
+systemctl restart freeradius
+systemctl status freeradius
+systemctl status winbind
+systemctl status krb5-kdc
+```
+
+Vous pouvez utiliser cela pour à peu près tous les services se trouvant sous /etc/init.d.
