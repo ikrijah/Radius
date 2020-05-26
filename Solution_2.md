@@ -40,5 +40,15 @@ Installons tous les paquets nécessaires.
 apt-get install freeradius freeradius-utils samba libnss-winbind krb5-admin-server krb5-config ntp ntpdate
 ```
 
-Lors de l'installation, krb5 devrait vous demander certaines choses. Pour le REALM, entrez '**CYBER.ISEN.FR**'. 
+Lors de l'installation, krb5 devrait vous demander certaines choses. Pour le REALM, entrez '**CYBER.ISEN.FR**'. Pour le Kerberos server et l'Admin server, entrez '**workstations.cyber.isen.fr**'. Nous allons tout de même modifier ces configurations dans le fichier /etc/krb5.conf un peu plus tard.
+
+Pas de problèmes jusque là !
+
+#### Configuration de Samba
+
+#### Configuration de Kerberos
+
+#### Configuration de ntp
+
+#### Configuration de winbind
 
