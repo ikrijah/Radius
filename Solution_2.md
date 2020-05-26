@@ -45,6 +45,8 @@ Pas de problèmes jusque là !
 
 ## Configuration
 
+Si vous avez modifié un fichier de configuration, il ne faut pas oublier de restart le service pour prendre en compte les modifications avec 'systemctl restart <nom_service>'.
+
 #### Configuration de Samba
 
 #### Configuration de Kerberos
@@ -56,14 +58,12 @@ Pas de problèmes jusque là !
 
 ## IV. Test / Troubleshooting 
 
-Nous avons rencontré énormément d'erreurs. Pour cela, nous vous ferons une liste exhaustive de ces erreurs ainsi que les pistes pour les supprimer. C'est pour cela que nous vous guiderons pour trouver l'origine de ces erreurs. 
+Nous avons rencontré énormément d'erreurs. Nous vous guiderons pour trouver l'origine de ces erreurs ! Pour cela, nous vous ferons une liste exhaustive de ces erreurs ainsi que les pistes pour les supprimer. 
 
-Le moyen qui a été le plus efficace pour nous pour retracer ces erreurs était 'systemctl status'. Ceci nous permet de voir si un module est actif ou non et les erreurs qui sont en rouge expliquent parfois clairement où est le problème. Si vous avez modifié un fichier de configuration, il ne faut pas oublier de restart le service pour prendre en compte les modifications avec 'systemctl restart <nom_service>'. Exemples !
+Le moyen qui a été le plus efficace pour nous pour retracer ces erreurs était 'systemctl status'. Ceci nous permettait de voir si un module est actif ou non et les erreurs qui sont en rouge expliquaient parfois clairement où est le problème.  Exemples !
 
 ```
-systemctl restart smbd 
 systemctl status smbd 
-systemctl restart freeradius
 systemctl status freeradius
 systemctl status winbind
 systemctl status krb5-kdc
