@@ -110,7 +110,7 @@ freeradius -X 2>&1 | tee debugfile
 Dans le premier terminal, vous pouvez envoyer une ligne de commande pour tester l'authentification sur le serveur LDAP : 
 
 ```
-radtest <user> <password> localhost 0 secret77
+radtest <user-ldap> <password-ldap> localhost 0 secret77
 ```
 
 Vous devriez maintenant voir "Access-Accept" pour la dernière ligne de sortie.
