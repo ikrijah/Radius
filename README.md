@@ -21,7 +21,7 @@ Domaine Name : cn=admin,dc=cyber,dc=isen,dc=fr
 Il faut aussi le mot de passe du LDAP. Celui-ci devrait vous être fournit par un administrateur.
 
 
-Après avoir installé Freeradius, nous pouvons commencer. Vous pouvez très bien utiliser nano pour ouvrir les fichiers. Il faut maintenant vérifier que tous les 'files' sont bien **commentés** dans le fichier default et inner-tunnel.
+Après avoir installé Freeradius, nous pouvons commencer. Vous pouvez très bien utiliser nano pour ouvrir les fichiers. Il faut maintenant vérifier que tous les 'files' sont bien **commentés** dans les fichiers default et inner-tunnel.
 
 ```
 cd /etc/freeradius/3.0/sites-enabled/
